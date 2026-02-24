@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Take & Bake Café</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-dark: #0f3d2e;
+  --green-main: #1f7a5a;
+  --green-light: #e8f5f0;
+  --accent: #34d399;
+  --text-dark: #1a1a1a;
+  --text-light: #666;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--green-dark);
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.hero {
+  padding: 80px 0;
+  text-align: center;
+  background: var(--green-light);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--green-dark);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn-primary {
+  background: var(--green-main);
+  color: var(--white);
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--green-dark);
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: var(--green-dark);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  padding: 30px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  color: var(--green-main);
+}
+
+.feature-card p {
+  color: var(--text-light);
+}
+
+.how-it-works {
+  background: var(--green-light);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.step {
+  padding: 20px;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green-main);
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.cta {
+  background: var(--green-main);
+  color: var(--white);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+.cta p {
+  margin-bottom: 30px;
+  color: #e0f2ea;
+}
+
+.cta .btn-primary {
+  background: var(--white);
+  color: var(--green-main);
+}
+
+.cta .btn-primary:hover {
+  background: var(--green-light);
+}
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <header>
+    <div class="logo">Take & Bake Café</div>
+    <nav class="nav">
+      <a href="#features">Benefits</a>
+      <a href="#how">How It Works</a>
+      <a href="#order">Order</a>
+    </nav>
+  </header>
+</div>
+
+<section class="hero">
+  <div class="container">
+    <h1>Freshly Prepared. Ready When You Are.</h1>
+    <p>Premium café-quality meals and desserts you bake fresh at home — zero stress, maximum flavor.</p>
+    <a href="#order" class="btn-primary">Order Your First Box</a>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2>Why Customers Love Take & Bake</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🥐 Café-Quality Taste</h3>
+        <p>Expertly crafted recipes using premium ingredients for bakery-level flavor at home.</p>
+      </div>
+      <div class="feature-card">
+        <h3>⏱ Ready in Minutes</h3>
+        <p>Simply bake and serve. No prep, no mess, no complicated steps.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌱 Fresh & Natural</h3>
+        <p>No artificial preservatives. Just clean, wholesome ingredients.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🏡 Perfect for Any Moment</h3>
+        <p>Family dinners, parties, or cozy evenings — always fresh from your oven.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section how-it-works">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Choose Your Favorites</h3>
+        <p>Select from our curated menu of pastries, meals, and desserts.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>We Prepare & Deliver</h3>
+        <p>We handle the prep and deliver ready-to-bake perfection.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Bake & Enjoy</h3>
+        <p>Pop it in the oven and enjoy warm, fresh café-quality goodness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonials">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      “It tastes like it came straight from a high-end café. So easy and so delicious!”
+    </div>
+    <div class="testimonial">
+      “Perfect for busy days — fresh-baked cookies in under 20 minutes!”
+    </div>
+  </div>
+</section>
+
+<section id="order" class="cta">
+  <h2>Bring the Café Home Today</h2>
+  <p>Experience warm, fresh-baked goodness without the hassle.</p>
+  <a href="#" class="btn-primary">Get Started Now</a>
+</section>
+
+<footer>
+  © 2026 Take & Bake Café. All rights reserved.
+</footer>
+
+</body>
+</html>
